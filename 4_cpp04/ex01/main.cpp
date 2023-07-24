@@ -6,7 +6,7 @@
 /*   By: mtrautne <mtrautne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/23 11:49:42 by mtrautne          #+#    #+#             */
-/*   Updated: 2023/07/23 21:52:21 by mtrautne         ###   ########.fr       */
+/*   Updated: 2023/07/24 18:13:53 by mtrautne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int main() {
 	
 	std::cout << std::endl << GRE "####-----CREATING ARRAY-----####" RES << std::endl;
 	Animal* array[5];
-	for (int i = 0; i < 5; i++) {
+	for (int i = 0; i < 6; i++) {
 		std::cout << std::endl << YEL "ANIMAL " << i << ":" RES << std::endl;
 		if ((i % 2) == 0)
 			array[i] = new Dog();
@@ -31,7 +31,7 @@ int main() {
 	}
 
 	std::cout << std::endl << GRE "####-----DELETING ARRAY-----####" RES << std::endl;
-	for (int i = 0; i < 5; i++) {
+	for (int i = 0; i < 6; i++) {
 		delete array[i];
 	}
 	

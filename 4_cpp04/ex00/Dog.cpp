@@ -6,7 +6,7 @@
 /*   By: mtrautne <mtrautne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/23 11:34:38 by mtrautne          #+#    #+#             */
-/*   Updated: 2023/07/23 12:03:21 by mtrautne         ###   ########.fr       */
+/*   Updated: 2023/07/24 18:10:08 by mtrautne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,25 @@
 #include <iostream>
 
 Dog::Dog() {
-	this->_type = "Dog";
 	std::cout << "Dog constructor called." << std::endl;
+	this->_type = "Dog";
 }
 
 Dog::Dog(const Dog& original) : Animal() {
-	this->_type = original._type;
 	std::cout << "Dog copy constructor called." << std::endl;
+	this->_type = original._type;
 }
 
 Dog&	Dog::operator=(const Dog& original) {
+	std::cout << "Dog assignment operator overload called." << std::endl;
 	if (this == &original)
 		return (*this);
 	this->_type = original._type;
-	std::cout << "Dog assignment operator overload called." << std::endl;
 	return (*this);
 	}
 
 Dog::~Dog() {
-	std::cout << "Dog deconstructor called." << std::endl;
+	std::cout << "Dog destructor called." << std::endl;
 }
 
 void	Dog::makeSound() const {

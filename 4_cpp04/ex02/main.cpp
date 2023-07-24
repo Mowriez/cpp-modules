@@ -6,7 +6,7 @@
 /*   By: mtrautne <mtrautne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/23 11:49:42 by mtrautne          #+#    #+#             */
-/*   Updated: 2023/07/23 23:08:01 by mtrautne         ###   ########.fr       */
+/*   Updated: 2023/07/24 18:16:41 by mtrautne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int main() {
 	// Animal test;
 
 	std::cout << std::endl << GRE "####-----NORMAL FUNCTION OF DERIVED CLASSES-----####" RES << std::endl;
-	std::cout << std::endl << BLU "####-----constructors-----####" RES << std::endl;
+	std::cout << BLU "####-----constructors-----####" RES << std::endl;
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
 
