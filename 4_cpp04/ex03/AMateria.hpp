@@ -1,32 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Brain.hpp                                          :+:      :+:    :+:   */
+/*   AMateria.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mtrautne <mtrautne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/23 15:16:51 by mtrautne          #+#    #+#             */
-/*   Updated: 2023/07/23 22:03:20 by mtrautne         ###   ########.fr       */
+/*   Created: 2023/07/24 10:13:22 by mtrautne          #+#    #+#             */
+/*   Updated: 2023/07/24 10:43:05 by mtrautne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string>
 
-#ifndef	BRAIN_HPP
-# define BRAIN_HPP
+#ifndef AMATERIA_HPP
+# define AMATERIA_HPP
 
-class Brain {
+class AMateria {
 	protected:
-		std::string	_ideas[100];
-
+		std::string	_type;
+		
 	public:
-		Brain();
-		Brain(const Brain& original);
-		Brain&	operator=(const Brain& original);
-		virtual ~Brain();
+		AMateria();
+		AMateria(std::string const & type);
+		AMateria(const AMateria& original);
+		AMateria&	operator=(const AMateria& original);
+		~AMateria();
 
-		std::string	getIdea(int i) const;
-		void		setIdea(int i, std::string idea);
+		std::string const & getType() const; //Returns the materia type
+		virtual AMateria* clone() const = 0;
+		virtual void use(ICharacter& target);
 };
 
 #endif

@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mtrautne <mtrautne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/22 23:21:45 by mtrautne          #+#    #+#             */
-/*   Updated: 2023/07/23 22:12:20 by mtrautne         ###   ########.fr       */
+/*   Created: 2023/07/23 12:19:29 by mtrautne          #+#    #+#             */
+/*   Updated: 2023/07/23 12:32:40 by mtrautne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string>
-#include "Brain.hpp"
 
-#ifndef	ANIMAL_HPP
-# define ANIMAL_HPP
+#ifndef	WRONGANIMAL_HPP
+# define WRONGANIMAL_HPP
 
 // colors
 # define RED "\033[1;31m"
@@ -24,18 +23,18 @@
 # define BLU "\033[1;34m"
 # define RES "\033[0m"
 
-class Animal {
+class WrongAnimal {
 	protected:
 		std::string		_type;
 
 	public:
-		Animal();
-		Animal(const Animal& original);
-		Animal&	operator=(const Animal& original);
-		virtual ~Animal(); //compiler complains "possible undefined behaviour if non-virtual destructor"
-		virtual void	makeSound() const;
-		std::string		getType() const;
-		virtual std::string		getIdea(int i) const;
+		WrongAnimal();
+		WrongAnimal(const WrongAnimal& original);
+		WrongAnimal&	operator=(const WrongAnimal& original);
+		~WrongAnimal();
+		
+		void		makeSound() const; // purposely wrong implementation!!
+		std::string	getType() const;
 };
 
 #endif

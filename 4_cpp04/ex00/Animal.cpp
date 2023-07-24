@@ -6,7 +6,7 @@
 /*   By: mtrautne <mtrautne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/23 11:34:29 by mtrautne          #+#    #+#             */
-/*   Updated: 2023/07/23 12:07:17 by mtrautne         ###   ########.fr       */
+/*   Updated: 2023/07/23 22:40:17 by mtrautne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ Animal&	Animal::operator=(const Animal& original) {
 }
 
 Animal::~Animal() {
-	std::cout << "Animal deconstructor called." << std::endl;
+	std::cout << "Animal destructor called." << std::endl;
 }
 
 void	Animal::makeSound() const {

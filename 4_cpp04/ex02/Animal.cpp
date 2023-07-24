@@ -6,7 +6,7 @@
 /*   By: mtrautne <mtrautne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/23 11:34:29 by mtrautne          #+#    #+#             */
-/*   Updated: 2023/07/23 22:40:13 by mtrautne         ###   ########.fr       */
+/*   Updated: 2023/07/23 22:40:07 by mtrautne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,15 +34,7 @@ Animal::~Animal() {
 	std::cout << "Animal destructor called." << std::endl;
 }
 
-void	Animal::makeSound() const {
-	std::cout << "Random animal noises..." << std::endl;
-}
-
 std::string	Animal::getType() const {
 	return("Object type: " + this->_type);
 }
 
-std::string		Animal::getIdea(int i) const {
-	i++;
-	return ("I have no brain...");
-}

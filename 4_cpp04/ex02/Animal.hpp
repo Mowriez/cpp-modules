@@ -6,7 +6,7 @@
 /*   By: mtrautne <mtrautne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/22 23:21:45 by mtrautne          #+#    #+#             */
-/*   Updated: 2023/07/23 22:12:20 by mtrautne         ###   ########.fr       */
+/*   Updated: 2023/07/23 22:34:17 by mtrautne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,12 @@ class Animal {
 		Animal();
 		Animal(const Animal& original);
 		Animal&	operator=(const Animal& original);
-		virtual ~Animal(); //compiler complains "possible undefined behaviour if non-virtual destructor"
-		virtual void	makeSound() const;
+		virtual ~Animal();
+
+		virtual void	makeSound() const = 0;
 		std::string		getType() const;
-		virtual std::string		getIdea(int i) const;
+
+		virtual std::string		getIdea(int i) const = 0;
 };
 
 #endif
