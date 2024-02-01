@@ -7,13 +7,13 @@ functions, operator overloading, inheritance, polymorphism, and more.
 The project is divided into several modules, each addressing specific topics in 
 C++ programming. Each module builds upon the previous one, allowing for a progressive learning experience.
 
-00 - specifities of C++ when compared to C -> First try at object oriented programming
-01 - memory allocation, reference, pointers to members and the usage of the switch statement
-02 - ad-hoc polymorphism, overloads and orthodox canonical classes
-03 - inheritance
-04 - subtype polymorphism, abstract classes and interfaces
-05 - try/catch and exceptions
-06 - casting
-07 - templates
-08 - templated containers, iterators and algorithms
-09 - containers deep dive
+00 - specifities of C++ when compared to C -> First try at object oriented programming <br>
+01 - memory allocation, reference, pointers to members and the usage of the switch statement <br>
+02 - ad-hoc polymorphism, overloads and orthodox canonical classes <br>
+03 - inheritance <br>
+04 - subtype polymorphism, abstract classes and interfaces <br>
+05 - try/catch and exceptions <br>
+06 - casting <br>
+07 - templates <br>
+08 - templated containers, iterators and algorithms <br>
+09 - containers deep dive <br>
